@@ -1,0 +1,36 @@
+{
+  "name": "typescript-ai-architecture-research",
+  "version": "1.0.0",
+  "description": "Research on organizing AI tools and agents in TypeScript projects",
+  "type": "module",
+  "scripts": {
+    "dev": "echo 'This is a research project. Navigate to examples/ to run code samples.'",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,md,json}\""
+  },
+  "keywords": [
+    "typescript",
+    "ai",
+    "agents",
+    "tools",
+    "mcp",
+    "architecture",
+    "best-practices",
+    "llm",
+    "feature-sliced-design"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0",
+    "prettier": "^3.2.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}

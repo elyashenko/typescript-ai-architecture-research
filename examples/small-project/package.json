@@ -1,0 +1,22 @@
+{
+  "name": "small-project-example",
+  "version": "1.0.0",
+  "description": "Small AI project with < 10 tools",
+  "type": "module",
+  "main": "lib/agent.ts",
+  "scripts": {
+    "dev": "tsx lib/agent.ts",
+    "build": "tsc",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ai": "^3.0.0",
+    "@ai-sdk/openai": "^0.0.20",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

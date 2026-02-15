@@ -1,0 +1,31 @@
+{
+  "name": "large-project-example",
+  "version": "1.0.0",
+  "description": "Large AI project with FSD architecture",
+  "type": "module",
+  "scripts": {
+    "agent:code-review": "tsx src/app/orchestrator.ts",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "ai": "^3.0.0",
+    "@ai-sdk/openai": "^0.0.20",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "prettier": "^3.2.0"
+  }
+}
