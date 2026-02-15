@@ -51,6 +51,12 @@
    - Для средних проектов (10-30 tools)
    - Для крупных проектов (30+ tools, monorepo)
 
+7. **[Open-Source Giants](./docs/07-opensource-giants.md)**
+   - Анализ LangChain (126k+ stars)
+   - Semantic Kernel от Microsoft
+   - LlamaIndex, CrewAI, Haystack
+   - Общие паттерны и best practices
+
 ### Примеры кода
 
 - **[Small Project](./examples/small-project/)** - Simple structure for pet projects
