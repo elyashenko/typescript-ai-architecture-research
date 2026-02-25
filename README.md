@@ -147,6 +147,12 @@ const tools = {
 - **[Email Assistant](https://github.com/langchain-ai/agents-from-scratch-ts)** - HITL + Memory
 - **[MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)** - Official MCP
 
+### MCP Examples (серверы и исходники)
+
+- **[Playwright MCP](https://github.com/microsoft/playwright/tree/main/packages/playwright/src/mcp)** - Автоматизация браузеров для тестирования и извлечения данных
+- **[Figma MCP](https://developers.figma.com/docs/figma-mcp-server)** - Интеграция Figma с AI-агентами (генерация кода из дизайна)
+- **[MCP Registry](https://github.com/mcp)** - Каталог MCP серверов от сообщества (Playwright, Figma, GitHub, Notion и др.)
+
 ## 🛠 Стек технологий
 
 - TypeScript
@@ -160,7 +166,6 @@ const tools = {
 
 ### Статьи
 
-- [Architecting AI Agents with TypeScript](https://apeatling.com/articles/architecting-ai-agents-with-typescript/)
 - [Building Effective Agents (Anthropic)](https://www.anthropic.com/research/building-effective-agents)
 - [A Practical Guide to Building AI Agents (OpenAI)](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
 
@@ -170,6 +175,13 @@ const tools = {
 - [Vercel AI SDK](https://ai-sdk.dev/docs)
 - [LangGraph Structure](https://docs.langchain.com/oss/javascript/langgraph/application-structure)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
+
+### MCP Спецификация
+
+- [MCP Tools](https://modelcontextprotocol.io/specification/2025-11-25/server/tools) - Tools (инструменты для LLM)
+- [MCP Resources](https://modelcontextprotocol.io/specification/2025-11-25/server/resources) - Resources (источники контекста и данных)
+- [MCP Prompts](https://modelcontextprotocol.io/specification/2025-11-25/server/prompts) - Prompts (шаблоны и воркфлоу)
+- [MCP Specification 2025-11-25](https://modelcontextprotocol.io/specification/2025-11-25) - Полная спецификация протокола
 
 ### Паттерны
 
