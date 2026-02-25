@@ -1,5 +1,7 @@
 # FSD Layers Visualization
 
+> Предлагаемая адаптация FSD для AI. Не используется в Mastra, LangChain и др. — см. [03-fsd-adaptation.md](../docs/03-fsd-adaptation.md).
+
 ## Layer Architecture
 
 ```mermaid

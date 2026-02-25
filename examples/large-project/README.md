@@ -1,6 +1,6 @@
 # Large Project Example
 
-Production-ready AI platform with 30+ tools using FSD-inspired architecture.
+**Иллюстративный пример** AI-платформы с 30+ tools. Использует предлагаемую FSD-подобную архитектуру — не копия реального production-проекта; популярные фреймворки (Mastra, LangChain) используют иные структуры.
 
 ## Structure (FSD Layers)
 
@@ -28,7 +28,7 @@ Cannot import from layers above
 
 ## Features
 
-- ✅ FSD-inspired architecture
+- ✅ Предлагаемая FSD-подобная архитектура (см. disclaimer в docs/03-fsd-adaptation.md)
 - ✅ Strict import rules
 - ✅ 30+ tools organized by layers
 - ✅ Multiple agents
@@ -70,7 +70,7 @@ npm run lint
 
 ## Key Decisions
 
-1. **FSD Layers** - Clear separation of concerns
+1. **FSD-like Layers** - Clear separation of concerns (proposed approach, not industry standard)
 2. **Import Rules** - Enforced via ESLint
 3. **Testing Strategy** - Unit, integration, e2e
 4. **Observability** - Built-in tracing and logging

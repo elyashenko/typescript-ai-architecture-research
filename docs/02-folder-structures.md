@@ -475,4 +475,4 @@ Tools регистрируются явно (не auto-discovery).
 
 → **[FSD для AI](./03-fsd-adaptation.md)**
 
-Адаптация Feature-Sliced Design для AI проектов.
+Предлагаемая адаптация Feature-Sliced Design (не общепринятый стандарт в AI-экосистеме).

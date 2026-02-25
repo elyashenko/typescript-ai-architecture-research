@@ -155,9 +155,9 @@ const deploymentAgent = createAgent({
 - Mastra Framework
 - OpenAI Agents SDK
 
-### 🎨 Адаптация FSD
+### 🎨 Предлагаемая адаптация FSD
 
-Применение принципов Feature-Sliced Design к AI:
+Мы предлагаем применить принципы Feature-Sliced Design к AI (это не устоявшаяся практика — Mastra, LangChain и др. используют свои структуры):
 - Слои (app, agents, features, entities, shared)
 - Правила импортов
 - Boundaries между модулями

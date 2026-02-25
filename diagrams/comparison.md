@@ -1,5 +1,7 @@
 # Architecture Comparison
 
+> Large/FSD-like структура — предлагаемый подход, не используемый в реальных фреймворках (Mastra, LangChain и др.).
+
 ## Project Size Evolution
 
 ```mermaid

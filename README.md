@@ -4,7 +4,7 @@
 
 ## 📋 О проекте
 
-Это комплексное исследование архитектурных подходов к организации AI tools, agents и MCP серверов в TypeScript проектах. Включает анализ реальных open-source проектов, адаптацию Feature-Sliced Design (FSD) для AI, и практические рекомендации для проектов разного масштаба.
+Это комплексное исследование архитектурных подходов к организации AI tools, agents и MCP серверов в TypeScript проектах. Включает анализ реальных open-source проектов, **предлагаемую** адаптацию Feature-Sliced Design (FSD) для AI, и практические рекомендации для проектов разного масштаба.
 
 ## 🎯 Для кого
 
@@ -29,10 +29,10 @@
    - Mastra Framework структура
 
 3. **[FSD для AI](./docs/03-fsd-adaptation.md)**
-   - Адаптация Feature-Sliced Design
+   - Предлагаемая адаптация Feature-Sliced Design
    - Слои: app → agents → features → entities → shared
    - Правила импортов
-   - Когда использовать
+   - ⚠️ Не общепринятый стандарт — см. выводы в документе
 
 4. **[Best Practices](./docs/04-best-practices.md)**
    - Именование и namespace
@@ -61,7 +61,7 @@
 
 - **[Small Project](./examples/small-project/)** - Simple structure for pet projects
 - **[Medium Project](./examples/medium-project/)** - Domain-based organization
-- **[Large Project](./examples/large-project/)** - FSD-inspired architecture
+- **[Large Project](./examples/large-project/)** - Предлагаемая FSD-подобная архитектура (иллюстративный пример)
 
 ### Диаграммы
 
@@ -101,7 +101,9 @@ tree -L 3
 - Переиспользования
 - Удобства тестирования
 
-### 🎨 FSD-подобная архитектура для крупных проектов
+### 🎨 Вариант: FSD-подобная архитектура (для крупных проектов)
+
+> Предлагаемый подход, не используемый Mastra/LangChain и др. См. [03-fsd-adaptation.md](./docs/03-fsd-adaptation.md).
 
 ```typescript
 src/
@@ -118,7 +120,7 @@ src/
 |--------|-----------|-------------------|
 | < 10 tools | Flat `lib/tools/*.ts` | Файлы по доменам |
 | 10-30 tools | `lib/tools/{domain}/` | Папки + namespace |
-| 30+ tools | FSD layers | Слои + strict imports |
+| 30+ tools | FSD-like (предлагаемый) | Слои + strict imports |
 | Monorepo | Workspaces + shared | `libs/shared/tools/` |
 
 ### 🔗 Namespace для масштабирования

@@ -256,7 +256,9 @@ export const codeReviewAgent = createAgent({
 - Требуется строгая архитектура
 - Важна поддерживаемость
 
-### Рекомендуемая структура (FSD-inspired)
+### Рекомендуемая структура (FSD-inspired, предлагаемый подход)
+
+> FSD для AI не является общепринятым стандартом. Mastra, LangChain и др. используют свои структуры. См. [03-fsd-adaptation.md](./03-fsd-adaptation.md).
 
 ```typescript
 my-ai-platform/
@@ -463,7 +465,7 @@ describe('Code Review Agent', () => {
 - Production требования
 
 **Шаги:**
-1. Внедрить FSD layers: `app/`, `agents/`, `features/`, `entities/`, `shared/`
+1. Рассмотреть FSD-like layers: `app/`, `agents/`, `features/`, `entities/`, `shared/` (предлагаемый подход)
 2. Настроить path aliases
 3. Добавить import rules в ESLint
 4. Написать архитектурную документацию
@@ -478,7 +480,7 @@ describe('Code Review Agent', () => {
 | **Количество tools** | < 10 | 10-30 | 30+ |
 | **Количество агентов** | 1-2 | 2-5 | 5+ |
 | **Размер команды** | 1 | 2-5 | 5+ |
-| **Структура** | Flat | Domain-based | FSD layers |
+| **Структура** | Flat | Domain-based | FSD-like (предлагаемая) |
 | **Namespace** | ❌ | ✅ | ✅ Required |
 | **Import rules** | ❌ | Optional | ✅ Required |
 | **Tests** | Optional | ✅ | ✅ Required |
@@ -499,7 +501,7 @@ describe('Code Review Agent', () => {
 **2. Выбрать структуру:**
 - [ ] Small: `lib/tools/*.ts`
 - [ ] Medium: `lib/tools/{domain}/`
-- [ ] Large: FSD layers
+- [ ] Large: FSD-like layers (предлагаемый вариант, см. docs/03-fsd-adaptation.md)
 
 **3. Setup инфраструктуры:**
 - [ ] TypeScript config с path aliases
@@ -522,7 +524,7 @@ describe('Code Review Agent', () => {
 2. **Растите постепенно** - переходите к следующему уровню по триггерам
 3. **Папка `tools/` обязательна** с 5+ tools
 4. **Namespace** нужен с 20+ tools
-5. **FSD** применяйте для 30+ tools и команды 5+ человек
+5. **FSD-like** — рассматривайте для 30+ tools и команды 5+ человек как опцию (не общепринятый стандарт, см. выводы в [03-fsd-adaptation.md](./03-fsd-adaptation.md))
 
 **Next steps:**
 
